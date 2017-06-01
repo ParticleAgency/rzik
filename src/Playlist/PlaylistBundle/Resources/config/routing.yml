@@ -1,0 +1,7 @@
+playlist_homepage:
+    path:     /
+    defaults: { _controller: PlaylistBundle:Default:index }
+
+playlist_by_user:
+   path:     /myplaylist/{id}
+   defaults: { _controller: PlaylistBundle:Playlist:playlistbyuser}

@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new test\TestBundle\testBundle(),
             new User\UserBundle\UserBundle(),
+            new Playlist\PlaylistBundle\PlaylistBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
