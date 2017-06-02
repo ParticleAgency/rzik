@@ -1,7 +1,15 @@
-playlist_homepage:
-    path:     /
-    defaults: { _controller: PlaylistBundle:Default:index }
-
-playlist_by_user:
-   path:     /myplaylist/{id}
+playlist_byuser:
+   path:     /myplaylist/
    defaults: { _controller: PlaylistBundle:Playlist:playlistbyuser}
+
+playlist_creation:
+    path:    /createmyplaylist/{user}
+    defaults: { _controller: PlaylistBundle:Playlist:createPlaylist}
+
+playlist_delete:
+    path:  /deletemyplaylist/{id}
+    defaults: { _controller: PlaylistBundle:Playlist:deletePlaylist}
+
+playlist_edit:
+    path: /editmyplaylist/{id}
+    defaults: { _controller: PlaylistBundle:Playlist:editPlaylist}

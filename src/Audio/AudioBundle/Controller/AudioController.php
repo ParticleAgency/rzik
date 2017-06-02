@@ -20,12 +20,9 @@ class AudioController extends Controller
 
 		$audioFilesCount = count($audioFiles);
 
-        return $this->render('AudioBundle:Default:index.html.twig',
-        						array(
-        							'audioFiles' => $audioFiles,
-        							'audioFilesCount' => $audioFilesCount
-        						)
-        					);
+        return $this->render('AudioBundle:Default:index.html.twig', array('audioFiles' => $audioFiles,
+                                                                          'audioFilesCount' => $audioFilesCount
+                                                                                                            ));
 	}
 
 

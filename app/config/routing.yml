@@ -2,6 +2,10 @@ playlist:
     resource: "@PlaylistBundle/Resources/config/routing.yml"
     prefix:   /
 
+audio:
+    resource: "@AudioBundle/Resources/config/routing.yml"
+    prefix:   /
+
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /

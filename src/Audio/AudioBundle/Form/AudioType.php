@@ -23,8 +23,8 @@ class AudioType extends AbstractType
             ->add('composer', 'text', array('required' => false))
             ->add('explicitcontent', 'checkbox', array('required' => false))
             ->add('duration', 'text', array('required' => false))
-            ->add('audiofilename', AudioType::class, array('label' => 'Fichier audio'))
-            ->add('imagefilename', AudioType::class, array('label' => 'Cover', 'required' => false))
+            //->add('audiofilename', AudioType::class, array('label' => 'Fichier audio'))
+            //->add('imagefilename', AudioType::class, array('label' => 'Cover', 'required' => false))
             ->add('submit', 'submit')
         ;
     }
