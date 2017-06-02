@@ -1,0 +1,11 @@
+audio_homepage:
+    path:     /audio
+    defaults: { _controller: AudioBundle:Audio:index }
+
+audio_add:
+    path:     /audio/add
+    defaults: { _controller: AudioBundle:Audio:new }
+
+audio_update:
+    path:     /audio/view/{id}
+    defaults: { _controller: AudioBundle:Audio:view }

@@ -1,0 +1,11 @@
+Hello musics
+
+<div><a href="audio/add">Add music</a></div>
+
+<div>{{ audioFilesCount }} music</div>
+
+<ul id="Audio">
+    {% for Audio in audioFiles %}
+        <li>{{ Audio.id }} - {{ Audio.title }} {{ Audio.artist }} <a href="audio/view/{{ Audio.id }}">View</a></li>
+    {% endfor %}
+</ul>

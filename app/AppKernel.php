@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new test\TestBundle\testBundle(),
             new User\UserBundle\UserBundle(),
+            new Audio\AudioBundle\AudioBundle(),
             new Playlist\PlaylistBundle\PlaylistBundle(),
         );
 

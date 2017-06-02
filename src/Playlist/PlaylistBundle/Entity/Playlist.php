@@ -44,11 +44,6 @@ class Playlist
      */
     private $position;
 
-    /**
-     * @var ArrayCollection
-     * @ORM\ManyToOne(targetEntity="Audio\AudioBundle\Entity\Audio", inversedBy="playlist")
-     */
-    private $category;
 
     /**
      * @var string
@@ -70,6 +65,12 @@ class Playlist
      */
     private $user;
 
+    /**
+     * @var string
+     * @ORM\OneToMany(targetEntity="Audio\AudioBundle\Entity\Audio", mappedBy="playlist", cascade={"persist","remove"})
+     * @ORM\JoinColumn(name="id", referencedColumnName="audio_id")
+     */
+    private $audioid;
 
     /**
      * Get id
@@ -187,10 +188,10 @@ class Playlist
     }
 
     /**
-     * Get user
-     *
-     * @return \User\UserBundle\Entity\User
-     */
+ * Get user
+ *
+ * @return \User\UserBundle\Entity\User
+ */
     public function getUser()
     {
         return $this->user;

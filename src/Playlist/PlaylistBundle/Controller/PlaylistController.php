@@ -11,9 +11,5 @@ class PlaylistController extends Controller
         return $this->render('PlaylistBundle:Playlist:index.html.twig');
     }
 
-    public function playlistbyuserAction($id)
-    {
-        $em = $this->getDoctrine()->getManager();
-        return $this->render('PlaylistBundle:Playlist:index.html.twig');
-    }
+
 }

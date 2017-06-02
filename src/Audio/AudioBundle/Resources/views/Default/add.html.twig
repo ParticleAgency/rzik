@@ -1,0 +1,14 @@
+Hello World!
+This is audio add page.
+
+{% for flashMessage in app.session.flashbag.get('message') %}
+
+    {{ flashMessage }}
+
+{% endfor %}
+
+{{ form_start(formAudio, {attr: {role: 'form'}}) }}
+{{ form_rest(formAudio) }}
+{{ form_end(formAudio) }}
+
+<a href="../audio">Back</a>
