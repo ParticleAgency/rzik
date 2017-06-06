@@ -1,0 +1,10 @@
+Hello World!
+This is audio view page.
+
+<ul id="Audio">
+    {% for Info in audioFileView %}
+        <li>{{ Info.id }} - {{ Info.title }} {{ Info.artist }} {{ Info.composer }} {{ Info.duration }}</li>
+    {% endfor %}
+</ul>
+
+<a href="../../audio">Back</a>

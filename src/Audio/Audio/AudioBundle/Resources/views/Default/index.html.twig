@@ -1,0 +1,14 @@
+Hello musics
+
+<div><a href="{{ path('audio_add') }}">Add music</a></div>
+
+<div>{{ audioFilesCount }} music</div>
+
+<ul id="Audio">
+    {% for Audio in audioFiles %}
+        <li>{{ Audio.id }} - {{ Audio.title }} {{ Audio.artist }} 
+        	<a href="{{ path('audio_view', {'id': Audio.id}) }}">View</a>
+        	<a href="{{ path('audio_edit', {'id': Audio.id}) }}">Edit</a>
+        </li>
+    {% endfor %}
+</ul>
